@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # Your CSV file path
-    df = pd.read_csv(r"E:\Visual\BikeDashboard")
+    df = pd.read_csv(r"E:\Visual\BikeDashboard\app.py")
     
     # Convert datetime
     df['datetime'] = pd.to_datetime(df['datetime'])
@@ -263,3 +263,4 @@ with st.expander("📋 View Data Summary"):
 st.markdown("---")
 
 st.markdown("Dashboard created for Bike Rental Analysis | Data: Washington D.C. 2011-2012")
+
